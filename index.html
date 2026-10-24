@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eun - Hardware Engineer</title>
+    <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <!-- External CSS: -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-[#08080c] text-slate-200 antialiased selection:bg-[#ff2a85] selection:text-white">
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-[#08080c]/90 border-b border-pink-500/20">
+      <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <!-- EDIT: NAVBAR_BRAND -->
+        <a href="#" class="text-xl font-bold tracking-tight text-white hover:text-[#ff2a85] transition-colors flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-[#ff2a85] inline-block shadow-[0_0_8px_#ff2a85]"></span>
+          <!-- EDIT: BRAND_NAME -->
+          <span>FCBPortfolio</span>
+        </a>
+        <!-- Navigation Links -->
+        <div class="flex items-center gap-6 text-sm font-medium text-slate-300">
+          <a href="#home" class="hover:text-[#ff2a85] transition-colors">Home</a>
+          <a href="#about" class="hover:text-[#ff2a85] transition-colors">About</a>
+          <a href="#projects" class="hover:text-[#ff2a85] transition-colors">Projects</a>
+          <a href="#skills" class="hover:text-[#ff2a85] transition-colors">Skills</a>
+          <a href="#contact" class="hover:text-[#ff2a85] transition-colors">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="max-w-6xl mx-auto px-6 py-12 md:py-16 space-y-24">
+      <!-- HERO SECTION -->
+      <section id="home" class="pt-4">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center">
+          <!-- Hero Avatar Box -->
+          <div class="md:col-span-5 flex justify-center">
+            <div class="w-full max-w-sm aspect-square rounded-2xl overflow-hidden glow-border bg-[#101018] relative group">
+              <!-- EDIT: HERO_IMAGE -->
+              <img src="myprofile-eun.jpg" alt="Hardware schematic avatar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            </div>
+          </div>
+          <!-- Hero Text & CTA -->
+          <div class="md:col-span-7 flex flex-col justify-center space-y-6">
+            <div>
+              <!-- EDIT: YOUR_NAME -->
+              <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-2"> Eunice Aquino </h1>
+              <!-- EDIT: YOUR_JOB_TITLE -->
+              <h2 class="text-xl sm:text-2xl font-semibold text-[#ff2a85] tracking-wide font-mono-tech"> Hardware Engineer </h2>
+            </div>
+            <!-- EDIT: SHORT_INTRODUCTION -->
+            <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-xl"> Explore a Hardware Engineer's portfolio featuring electronic circuit design, PCB development, hardware testing, troubleshooting, and reliable engineering solutions. </p>
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+              <!-- EDIT: VIEW_PROJECTS_BUTTON -->
+              <a href="#projects" class="btn-pink-primary px-7 py-3.5 rounded-xl font-semibold text-white text-sm tracking-wide text-center"> View My Projects </a>
+              <!-- EDIT: CONTACT_ME_BUTTON -->
+              <a href="#contact" class="btn-pink-secondary px-7 py-3.5 rounded-xl font-semibold text-sm tracking-wide text-center"> Contact Me </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT SECTION -->
+      <section id="about" class="space-y-6">
+        <div class="text-center">
+          <!-- EDIT: ABOUT_SECTION_HEADING -->
+          <h2 class="text-3xl font-bold tracking-tight text-white">About</h2>
+        </div>
+        <div class="rounded-2xl glow-border bg-[#101018]/90 p-8 sm:p-12 text-center max-w-4xl mx-auto min-h-[160px] flex items-center justify-center">
+          <!-- EDIT: ABOUT_YOU -->
+          <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto"> I am a Hardware Engineer focused on designing, developing, testing, and optimizing electronic hardware systems and circuit designs. My expertise includes hardware development, electronic circuit analysis, PCB design, troubleshooting, and hardware testing to ensure reliable performance and functionality. I enjoy solving technical challenges, exploring emerging technologies, and improving hardware efficiency through practical engineering solutions. My goal is to deliver dependable, cost-effective hardware solutions that meet technical requirements and support innovative product development. </p>
+        </div>
+      </section>
+      <!-- PROJECTS SECTION -->
+      <section id="projects" class="space-y-10">
+        <div class="text-center">
+          <!-- EDIT: PROJECTS_SECTION_HEADING -->
+          <h2 class="text-3xl font-bold tracking-tight text-white">Projects</h2>
+        </div>
+        <!-- Exactly 3 Project Cards matching wireframe -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+          <!-- PROJECT CARD 1 -->
+          <div class="rounded-2xl glow-border bg-[#101018] overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-1">
+            <div class="w-full aspect-[16/10] overflow-hidden bg-slate-900 border-b border-pink-500/20">
+              <!-- EDIT: PROJECT_IMAGE_1 -->
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNvcm8GnRpYyndw97r5LqgSE3R9GeyeVYUBC80wpUBOK54GV48gUDbzE3Tc4RhX8cvJKqh2cNYsf4KPi6VmqCLifaYt65AGMdp-KqYYG72f1QAIxwroJX6BlfXFvCyeS5uBz81vG4McyEHnz-UaiRLA256akpIPf-mTO2Cq4roR8tptxaAj5fUZwT1vKlmTufvTKQijepy9g5D5iW0h5w_-_qNzzgzvRUB9Q8w_w7evT-FWHSqTQqe" alt="Project preview" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div class="p-6 flex flex-col flex-1 justify-between space-y-4">
+              <div class="space-y-2">
+                <!-- EDIT: PROJECT_TITLE_1 -->
+                <h3 class="text-xl font-bold text-white tracking-tight">Project Title</h3>
+                <!-- EDIT: PROJECT_DESCRIPTION_1 -->
+                <p class="text-slate-400 text-sm leading-relaxed"> Project Description </p>
+              </div>
+              <div>
+                <!-- EDIT: PROJECT_LINK_1 -->
+                <a href="#" class="btn-pink-primary inline-block px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold text-white tracking-wide"> Project Link </a>
+              </div>
+            </div>
+          </div>
+          <!-- PROJECT CARD 2 -->
+          <div class="rounded-2xl glow-border bg-[#101018] overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-1">
+            <div class="w-full aspect-[16/10] overflow-hidden bg-slate-900 border-b border-pink-500/20">
+              <!-- EDIT: PROJECT_IMAGE_2 -->
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAX97ywgYYo7b4j6U1irzgslZKgAkZ61IVxl-XbBz0Do4ZXufJIKtnm_IsV_lBzG8uHOSzWt8pNLwxGDjoqL0GgjXUnGxQE1QdB09EtMdpP-hcuvbbyOmmylPYxAbbSm2--XoJw-zkzT2tTm0bSiqS6d1DG5Fn8pNm7xNNd_wRpyxF34BhAbuCjmw-ugeQN7OV--Ny94q66zlhgJPCya2h2nhQzpXXFTfsuAe50VG7idG9q2o7m_wyE" alt="Project preview" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div class="p-6 flex flex-col flex-1 justify-between space-y-4">
+              <div class="space-y-2">
+                <!-- EDIT: PROJECT_TITLE_2 -->
+                <h3 class="text-xl font-bold text-white tracking-tight">Project Title</h3>
+                <!-- EDIT: PROJECT_DESCRIPTION_2 -->
+                <p class="text-slate-400 text-sm leading-relaxed"> Project Description </p>
+              </div>
+              <div>
+                <!-- EDIT: PROJECT_LINK_2 -->
+                <a href="#" class="btn-pink-primary inline-block px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold text-white tracking-wide"> Project Link </a>
+              </div>
+            </div>
+          </div>
+          <!-- PROJECT CARD 3 -->
+          <div class="rounded-2xl glow-border bg-[#101018] overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-1">
+            <div class="w-full aspect-[16/10] overflow-hidden bg-slate-900 border-b border-pink-500/20">
+              <!-- EDIT: PROJECT_IMAGE_3 -->
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUfRHDmok4CGR9jcJhhUcLEo1Mb1WBm6RyJWjQ-Xx229g1zXJUDfPKFpotB3DrFwooObYPkq3XQNFDkUNFaRH0az9wv6_bF5l6yZuA2BZDz_x8wdF9-GOesqqe5lozbtv8VfuK7YeXnlPKKDS3E2rxRotMaJ0Ds0Yc6C9bfHz9yXAEg1KzUmcNrJJpK3CwuZruw0TvXOUBvYqFVNn0ywj51-rKT4vt9jy9BqMjiSQ8Jssk2LtHoZtO" alt="Project preview" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div class="p-6 flex flex-col flex-1 justify-between space-y-4">
+              <div class="space-y-2">
+                <!-- EDIT: PROJECT_TITLE_3 -->
+                <h3 class="text-xl font-bold text-white tracking-tight">Project Title</h3>
+                <!-- EDIT: PROJECT_DESCRIPTION_3 -->
+                <p class="text-slate-400 text-sm leading-relaxed"> Project Description </p>
+              </div>
+              <div>
+                <!-- EDIT: PROJECT_LINK_3 -->
+                <a href="#" class="btn-pink-primary inline-block px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold text-white tracking-wide"> Project Link </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SKILLS AND TOOLS SECTION -->
+      <section id="skills" class="space-y-10">
+        <div class="text-center">
+          <!-- EDIT: SKILLS_TOOLS_HEADING -->
+          <h2 class="text-3xl font-bold tracking-tight text-white">Skills and Tools</h2>
+        </div>
+        <!-- Exactly 2 Cards matching wireframe -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <!-- CARD 1: SKILLS -->
+          <div class="rounded-2xl glow-border bg-[#101018] p-8 flex flex-col items-center text-center">
+            <!-- EDIT: SKILLS_CARD_HEADING -->
+            <h3 class="text-2xl font-bold text-white mb-6 tracking-wide flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-[#ff2a85] inline-block shadow-[0_0_8px_#ff2a85]"></span> Skills
+            </h3>
+            <!-- Plain unordered list of skills -->
+            <ul class="space-y-3.5 text-slate-300 text-base w-full max-w-xs">
+              <!-- EDIT: SKILL_ITEM_1 -->
+              <li class="py-2 px-4 rounded-xl bg-slate-900/60 border border-pink-500/15 font-medium">Circuit Design & Analysis</li>
+              <!-- EDIT: SKILL_ITEM_2 -->
+              <li class="py-2 px-4 rounded-xl bg-slate-900/60 border border-pink-500/15 font-medium">PCB Design & Layout</li>
+              <!-- EDIT: SKILL_ITEM_3 -->
+              <li class="py-2 px-4 rounded-xl bg-slate-900/60 border border-pink-500/15 font-medium">Programming & Scripting</li>
+              <!-- EDIT: SKILL_ITEM_4 -->
+              <li class="py-2 px-4 rounded-xl bg-slate-900/60 border border-pink-500/15 font-medium">Hardware Description Languages (HDL)</li>
+            </ul>
+          </div>
+          <!-- CARD 2: TOOLS / TECHNOLOGIES -->
+          <div class="rounded-2xl glow-border bg-[#101018] p-8 flex flex-col items-center text-center">
+            <!-- EDIT: TOOLS_CARD_HEADING -->
+            <h3 class="text-2xl font-bold text-white mb-6 tracking-wide flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-[#ff2a85] inline-block shadow-[0_0_8px_#ff2a85]"></span> Tools
+            </h3>
+            <!-- Plain unordered list of tools -->
+            <ul class="space-y-3.5 text-slate-300 text-base w-full max-w-xs">
+              <!-- EDIT: TOOL_ITEM_1 -->
+              <li class="py-2 px-4 rounded-xl bg-slate-900/60 border border-pink-500/15 font-medium font-mono-tech text-sm">Tool / Technology</li>
+              <!-- EDIT: TOOL_ITEM_2 -->
+              <li class="py-2 px-4 rounded-xl bg-slate-900/60 border border-pink-500/15 font-medium font-mono-tech text-sm">Tool / Technology</li>
+              <!-- EDIT: TOOL_ITEM_3 -->
+              <li class="py-2 px-4 rounded-xl bg-slate-900/60 border border-pink-500/15 font-medium font-mono-tech text-sm">Tool / Technology</li>
+              <!-- EDIT: TOOL_ITEM_4 -->
+              <li class="py-2 px-4 rounded-xl bg-slate-900/60 border border-pink-500/15 font-medium font-mono-tech text-sm">Tool / Technology</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="space-y-8">
+        <div class="text-center">
+          <!-- EDIT: CONTACT_SECTION_HEADING -->
+          <h2 class="text-3xl font-bold tracking-tight text-white">Contact</h2>
+        </div>
+        <div class="rounded-2xl glow-border bg-[#101018] p-8 sm:p-12 text-center max-w-3xl mx-auto space-y-6">
+          <!-- EDIT: CONTACT_INFO_HEADING -->
+          <h3 class="text-2xl font-bold text-white">Contact Info</h3>
+          <!-- Generic contact placeholders as specified -->
+          <div class="space-y-3 text-slate-300">
+            <!-- EDIT: YOUR_EMAIL -->
+            <p class="text-base sm:text-lg">
+              <span class="text-[#ff2a85] font-mono-tech">Email:</span> eunicesumataquino@gmail.com
+            </p>
+            <!-- EDIT: YOUR_CONTACT_INFORMATION -->
+            <p class="text-base sm:text-lg">
+              <span class="text-[#ff2a85] font-mono-tech">Contact Number:</span> 09946911826
+            </p>
+          </div>
+          <div class="pt-4 border-t border-pink-500/20">
+            <!-- EDIT: YOUR_SOCIAL_LINK -->
+            <a href="https://www.linkedin.com/in/eunice-aquino-333813446/" class="btn-pink-secondary inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm">
+              <span>Linkedin</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="mt-20 border-t border-pink-500/20 bg-[#060609] py-8 text-center text-sm font-semibold tracking-wide text-slate-400">
+      <div class="max-w-6xl mx-auto px-6">
+        <!-- EDIT: FOOTER_CONTENT -->
+        <p>Footer</p>
+      </div>
+    </footer>
+  </body>
+</html>
